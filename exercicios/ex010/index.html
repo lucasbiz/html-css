@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+    <link rel="shortcut icon" href="Favicons/thumas.ico" type="image/x-icon">
+    <style>
+        a{
+            color: rgb(132, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com links externos e internos</h1> <hr> 
+    <h2>Links Externos</h2>
+    <p>Quando um link é externo, é recomendado fazer com que o link seja aberto em uma aba nova, como por exemplo: <br> Para acessar a área de inscrições do YouTube basta seguir esse <a href="https://www.youtube.com/feed/subscriptions" target="_blank" rel="external">link</a></p>
+    <p>Quando é dentro do meu proprio site, o link interno não precisa abrir uma aba nova <br> Exemplo: <a href="https://www.twitch.tv/directory/following">Twitch</a> </p>
+    <h2>Links internos</h2>
+    <p>Para ir para a segunda página do meu site, é só clicar nesse <a href="pag2.html" rel="next">Link</a></p>
+    <p>Para ir para a  minha 3° página, que está dentro de uma pasta, basta seguir esse <a href="Testepasta/pag3.html" rel="next">Link</a></p>
+
+<!-- HREF = "COLOCAR O LINK"
+    TARGET = "_BLANK" ABRE O LINK EM UMA ABA EM BRANCO, MANTENDO A MINHA PÁGINA ORIGINAL ABERTA
+    REL = "EXTERNAL" INDICA QUE O LINK É EXTERNO-->
+    <!-- REL = "NEXT" INDICA PARA O BUSCADOR QUE O LINK É A PROXIMA PARTE DO DOCUMENTO ATUAL-->
+
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="Download/spotify_artist_guide_EN.pdf" download="spotify_artist_guide_EN.pdf" type="application/pdf">PDF em PDF</a></li>
+        <li><a href="Download/spotify_artist_guide_EN.rar" download="spotify_artist_guide_EN.rar" type="application/zip">PDF em RAR</a></li>
+    </ul>
+
+    <!-- PARA COLOCAR LINKS DE DOWNLOAD TEM QUE COLOCAR O HREF E DEPOIS "DOWNLOAD="NOME DO ARQUIVO"" E "TYPE=TIPO DO ARQUIVO" 
+    OBS: O QUE COLOCAR EM TYPE DEPENDE DA EXTENSÃO DO ARQUIVO, PODEMOS ENCONTRAR CADA MEDIA TYPE EM
+    https://www.iana.org/assignments/media-types/media-types.xhtml -->
+</body>
+</html>

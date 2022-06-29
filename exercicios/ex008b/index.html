@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+
+    <style> 
+    h2{ 
+        color: rgb(255, 0, 0);
+    }
+    p{
+        color: blue;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p> O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript, usamos a tag &lt;code&gt; <br> formatar com monoespaçamento</p>
+    <pre>
+        <code>
+teste = int(input("Digite um número: "))
+while teste != 0:
+  print("Esse número não é 0")
+  teste = int(input("Digite um número: "))
+         </code>
+    </pre>
+    
+    <!-- TAG <CODE> É USADA PARA DEIXAR LETRAS MONOESPAÇADAS-->
+    <!-- TAG <PRE> É UTILIZADA JUNTAMENTE A CODE OU NÃO PARA FACILITAR A ESCRITA DE CODIGOS-->
+
+    <h2>Citações simples</h2>
+    <p> Como diria o pai de um amigo:<q>O computador é um burro muito rápido</q><br> Com a tag &lt;q&gt; podemos criar citações ao invés de usar diretamente  as aspas "</p>
+    <h2>Citações completas</h2>
+    <p>Segundo o autor X, no seu livro XXXX:</p>
+    <blockquote cite="https://books.google.com.br/books/about/A_sutil_arte_de_ligar_o_f_da_se.html?id=OpE4DwAAQBAJ&source=kp_book_description&redir_esc=y">Chega de tentar buscar um sucesso que só existe na sua cabeça. Chega de se torturar para pensar positivo enquanto sua vida vai ladeira abaixo. Chega de se sentir inferior por não ver o lado bom de estar no fundo do poço.</blockquote>   
+
+<!-- <BLOCKQUOTE> É A CITAÇÃO DESLOCADA
+    COM A FUNÇÃO "CITE" PODEMOS TAMBÉM CITAR O LINK DE ONDE ESSA CITAÇÃO VEIO, QUE NAO APARECE NO SITE EM SI, MAS NOS MECANISMOS DE BUSCA AJUDA-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr></p>
+
+    <!-- <ABBR> É A TAG QUE CARACTERIZA AS ABREVIAÇÕES, PASSANDO O MOUSE EM CIMA MOSTRA O TEXTO Q COLOCAMOS-->
+</body>
+</html>

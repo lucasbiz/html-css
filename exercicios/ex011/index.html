@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        hr{
+            color: blue;
+        }
+    </style>
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Teste de imagem que se adapta aos diferentes displays de diferentes dispositivos :D</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto G">
+    </picture>
+    <hr>
+    <h2>Teste de reprodução de audio mp3 :D</h2>
+
+    <!-- ESSE COMANDO PERMITE QUE O NAVEGADOR EXECUTE O TIPO DE AUDIO QUE ELE CONSEGUIR, NAO DEIXANDO DE REPRODUZIR, E POR ULTIMO, SE NENHUM FUNCIONAR ELE DISPONIBILIZA O AUDIO PRA DOWNLOAD-->
+
+    <audio preload="metadata" controls>
+        <source src="loop top.mp3" type="audio/mpeg">
+        <source src="" type="">
+        <source src="" type="">  
+        <source src="" type="">
+        <p>Se não conseguir reproduzir o audio, baixe o arquivo MP3 <a href="loop top.mp3" download="loop top.mp3" type="audio/mpeg">aqui</a></p>
+    </audio>
+    <p>Se não conseguir reproduzir o audio, baixe o arquivo MP3 <a href="loop top.mp3" download="loop top.mp3" type="audio/mpeg">aqui</a></p>
+    
+    <!-- COMPATIBILIDADE DOS NAVEGADORES É GERALMENTE COM MP3, WAV E OGG-->
+
+    <hr>
+    <h2> Teste de reprodução de video hospedado no próprio site :p</h2>
+    <video width="400" height="600" controls poster="imagens/testecapavideo.jpeg">
+        <source src="video/Parabéns.mp4" type="video/mp4">
+        <source src="" type="">
+        <source src="" type="">
+        <source src="" type="">
+        <source src="" type="">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo</p>
+    </video>
+
+    <!-- POSTER É A CAPA DO VÍDEO PARA QUE ELE NAO FIQUE PAUSADO NO PRIMEIRO FRAME-->
+
+    <!-- VIDEOS GRANDES DEPOIS DE 720P NÃO VALE MAIS A PENA HOSPEDAR NO SITE, E SIM INCORPORAR PELO YOUTUBE OU VIMEO-->
+
+    <hr>
+    <h2>Teste de reprodução de video incorporado de um site externo :O</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/47vESlV6DXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</body>
+</html>

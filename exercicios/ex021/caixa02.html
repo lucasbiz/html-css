@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+        }
+        header{
+            background-color: bisque;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(255, 94, 0);
+            border-radius: 10px;
+        }
+        span#titulo_sem_gato{
+            text-decoration: underline;
+        }
+        nav{
+            background-color:#ffd9ab;
+            padding: 3px;
+            box-shadow: 2px 2px 3px#b99c79;
+;
+        }
+        nav > a {
+            margin-right: 30px;
+        }
+        main{
+            background-color: white;
+            padding: 5px 20px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+        }
+        footer{
+            background-color: rgba(0, 0, 0, 0.521);
+            color: white;
+            margin: 10px;
+            padding:5px 10px;
+            border-radius: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article > aside {
+            background-color: rgba(128, 128, 128, 0.178);
+        }
+        p#texto{
+            text-indent: 20px;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span id="titulo_sem_gato">Meu site</span> <span>&#x1F408</span></h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Título</h2>
+                <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae molestiae perspiciatis repellat at minima odio modi voluptatum in excepturi, voluptas earum illo nihil omnis explicabo minus velit cumque autem perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam provident reprehenderit expedita, repellendus eius molestiae repudiandae neque laborum quidem labore! Molestiae odio asperiores maiores dolorem nulla culpa sit nemo! Voluptatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> <p id="texto"> Fugit excepturi et culpa, sit rem ipsa tenetur totam sed inventore, quis amet in! Eveniet doloribus non veniam, quibusdam magnam cupiditate fugit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat pariatur eaque quas ad tenetur neque minus laudantium nesciunt consequuntur ipsa. Recusandae aliquid dignissimos tempore inventore porro, provident distinctio tenetur error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio voluptatibus, quisquam adipisci at itaque suscipit quidem debitis eos esse labore, iste illum obcaecati voluptates numquam officia consequatur omnis laborum.</p>
+                <aside><p>Por Lucas de novo</p></aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por <ins>Lucas</ins> ;D</p>
+
+    </footer>
+    
+</body>
+</html>
