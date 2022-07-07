@@ -11,9 +11,20 @@
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+
+            /* 
+            SHORTHANDS BACKGROUND
+
+            COLOR > IMAGE > POSITION > REPEAT > SIZE (está bugando no shorthand, colocar separado) > ATTACHMENT
+
+            background: [black] [url(foto)] [center center] [no-repeat] [cover(bugado)] [fixed]
+
+            Retirar as [], coloquei apenas para separar os elementos
+            
+            */
         }
         main{
             background-color: white;
