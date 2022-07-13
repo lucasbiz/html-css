@@ -12,7 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
-    
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -24,6 +24,13 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
         thead{
             background-color: grey;
             color: white;
@@ -31,6 +38,9 @@
         tfoot{
             background-color: grey;
             color: white;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightblue;
         }
     </style>
 </head>
@@ -53,8 +63,8 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px ;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -70,12 +80,98 @@
                 <td>Rio de Janeiro</td>
                 <td>17.264.793</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.793</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.793</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.793</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.793</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.793</td>
+            </tr>
+            
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td>00000</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis temporibus hic aut laborum modi, necessitatibus perferendis magnam ducimus, ut libero, suscipit tenetur voluptas expedita pariatur placeat neque explicabo repellendus!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas labore magnam nam illo nulla, rem tempore, natus iure earum esse molestiae velit nemo temporibus, ullam et fugiat. Atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id nulla est quisquam vero ipsa facere eius? Ratione nam nemo obcaecati eius alias quod neque suscipit! Facere odit reiciendis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit repellat? Excepturi, illum, aut vel deleniti laudantium eaque fugit harum inventore enim quaerat dolorum tempore non unde neque sapiente sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eaque, voluptate atque quis ex distinctio quas iure laborum iste nulla incidunt, pariatur quod itaque rerum, doloremque quos beatae blanditiis veritatis?
+    </p>
+
     
 </body>
 </html>
