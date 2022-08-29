@@ -35,7 +35,7 @@ span#menu:hover{
 }
 
 menu{
-    display: block;
+    display: none;
     height: 195px;
 }
 
@@ -71,6 +71,7 @@ main {
     padding: 10px;
     text-align: justify;
     border-radius: 10px;
+    max-width: 1000px;
 
 }
 
